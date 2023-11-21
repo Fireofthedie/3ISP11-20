@@ -49,7 +49,7 @@
                             <Image Height="180"
                                    Width="200" 
                                    Source="{Binding Description}"
-                                   Margin="8">                                
+                                   Margin="8">
                             </Image>
 
                             <TextBlock Text="{Binding Title}"
@@ -57,7 +57,7 @@
                                        Margin="5 3"/>
                             <TextBlock Text="{Binding Cost}"
                                        FontSize="18"
-                                       Margin="5 3"/>  
+                                       Margin="5 3"/>
                         </StackPanel>
                     </Border>
                 </DataTemplate>
@@ -91,12 +91,25 @@
                 Content="Назад"
                 Grid.Row="3"
                 Width="100"
-                Height="40"
                 Background="{x:Null}"
                 BorderThickness="0"
                 HorizontalAlignment="Right"
-                Click="BtnBack_Click">
-
-        </Button>
+                Click="BtnBack_Click" Margin="0,1,0,5"/>
+        <TextBox HorizontalAlignment="Left" 
+                 Margin="904,10,0,0" 
+                 Grid.Row="3" 
+                 TextWrapping="Wrap" 
+                 Text="TextBox" 
+                 VerticalAlignment="Bottom" 
+                 Width="188" Height="40" FontSize="25"/>
+        <TextBlock HorizontalAlignment="Left"
+                   Margin="810,0,0,0" 
+                   Grid.Row="3"
+                   TextWrapping="Wrap"
+                   Text="Сумма:"
+                   Width="94"
+                   FontSize="25" 
+                   Height="38" 
+                   VerticalAlignment="Bottom"/>
     </Grid>
 </Window>
