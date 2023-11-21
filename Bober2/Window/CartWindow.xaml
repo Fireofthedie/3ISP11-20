@@ -28,8 +28,10 @@
 
         <ListView x:Name="LvCartService" 
                   Grid.Row="2" 
+                  BorderBrush="{x:Null}"
                   d:ItemsSource="{d:SampleData ItemCount=5}"
-                  ScrollViewer.HorizontalScrollBarVisibility="Disabled" Background="{x:Null}" >
+                  ScrollViewer.HorizontalScrollBarVisibility="Disabled" 
+                  Background="{x:Null}" >
 
             <ListView.ItemsPanel>
                 <ItemsPanelTemplate>
@@ -94,7 +96,7 @@
                 Background="{x:Null}"
                 BorderThickness="0"
                 HorizontalAlignment="Right"
-                Click="BtnBack_Click" Margin="0,1,0,5"/>
+                Click="BtnBack_Click" Margin="0,1,0,5" FontWeight="Bold" FontSize="16"/>
         <TextBox HorizontalAlignment="Left" 
                  Margin="904,10,0,0" 
                  Grid.Row="3" 
